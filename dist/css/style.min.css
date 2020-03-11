@@ -1,0 +1,217 @@
+@charset "UTF-8";
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1182px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:active,
+:focus {
+  outline: 0;
+}
+a:active,
+a:focus {
+  outline: 0;
+}
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  color: #000;
+}
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: roboto, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body.lock {
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+button,
+input,
+textarea {
+  font-family: roboto, sans-serif;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto-regular-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: roboto;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/roboto-italic-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/roboto-bold-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: roboto;
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/roboto-bolditalic-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: BravoRG;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/BravoRG.eot) format("eot");
+}
+@font-face {
+  font-family: BravoRG;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/BravoRG.otf) format("otf");
+}
+@font-face {
+  font-family: BravoRG;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/BravoRG.svg) format("svg");
+}
+@font-face {
+  font-family: BravoRG;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/BravoRG.ttf) format("ttf");
+}
+@font-face {
+  font-family: BravoRG;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/BravoRG.wof) format("wof");
+}
+::-webkit-input-placeholder {
+  color: #666;
+}
+::-moz-placeholder {
+  color: #666;
+}
+:-ms-input-placeholder {
+  color: #666;
+}
+::-ms-input-placeholder {
+  color: #666;
+}
+::placeholder {
+  color: #666;
+}
+::-moz-selection {
+  background-color: orange;
+  color: #fff;
+}
+::selection {
+  background-color: orange;
+  color: #fff;
+}
+input,
+textarea {
+  outline: 0;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: roboto, sans-serif;
+  overflow-x: hidden;
+  color: #333;
+}
