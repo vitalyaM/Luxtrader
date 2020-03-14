@@ -16,6 +16,7 @@ gulp.task('browser-sync', function () {
 			baseDir: 'app'
 		},
 		notify: false,
+		// online: false, // Work offline without internet connection
 		// tunnel: true,
 		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
 	});
@@ -25,9 +26,10 @@ gulp.task('browser-sync', function () {
 gulp.task('js', function () {
 	return gulp.src([
 		//'app/libs/jquery/dist/jquery.min.js',
-		'app/js/main.js', // Всегда в конце
+		//'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
+		'app/js/source/main.js', // Всегда в конце
 	])
-		.pipe(concat('scripts.min.js'))
+		.pipe(concat('main.min.js'))
 		.pipe(uglify()) // Минимизировать весь js (на выбор)
 		.pipe(gulp.dest('app/js'))
 		.pipe(browserSync.reload({ stream: true }));
@@ -37,7 +39,7 @@ gulp.task('sass', function () {
 	return gulp.src('app/scss/**/*.scss')
 		.pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
 		.pipe(rename({ suffix: '.min', prefix: '' }))
-		.pipe(autoprefixer(['last 15 versions']))
+		.pipe(autoprefixer(['last 5 versions']))
 		.pipe(cleanCSS()) // Опционально, закомментировать при отладке
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({ stream: true }));

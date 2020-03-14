@@ -2,8 +2,9 @@
 /.git/
 /**/Thumbs.db
 /**/*.DS_Store
-/temp/
-/app/
-/gulpfie.json
-/package.js
+/app
+/temp
+/.gitignore
 /.npmrc
+/gulpfile.js
+/package.json
