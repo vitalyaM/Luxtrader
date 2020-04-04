@@ -23,58 +23,58 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header__row">
-          <div class="header__column">
-            <a class="header-logo">
-              <img src="img/logo.svg" alt="Логотип Luxtrader" />
-            </a>
-          </div>
-          <div class="header__column">
-            <nav class="header__navigation header-navigation">
-              <ul class="header-navigation-menu">
-                <li><a href="#" class="header-navigation-menu__link">Главная</a></li>
-                <li><a href="#" class="header-navigation-menu__link">Аукцион</a></li>
-                <li><a href="#" class="header-navigation-menu__link">О проекте</a></li>
-                <li><a href="#" class="header-navigation-menu__link">Партнерам</a></li>
-                <li><a href="#" class="header-navigation-menu__link">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__column">
-            <ul class="header__lang-select lang-select">
-              <li><a href="#" class="lang-select__link">En</a></li>
-              <li><a href="#" class="lang-select__link">Ru</a></li>
-            </ul>
-          </div>
-          <div class="header__column">
-            <a href="#" class="header__search search">Поиск</a>
-          </div>
-          <div class="header__column">
-            <nav class="header__user-navigation user-navigation">
-              <ul class="user-navigation__list">
-                <li>
-                  <a href="#" class="user-navigation__button"></a>
-                  <ul class="user-navigation__sublist">
-                    <li><a href="#" class="user-navigation__link user-navigation__link--region">Выбор региона</a></li>
-                    <li><a href="#" class="user-navigation__link user-navigation__link--private">Личный кабинет</a></li>
-                    <li><a href="#" class="user-navigation__link user-navigation__link--bets">Мои ставки</a></li>
-                    <li><a href="#" class="user-navigation__link user-navigation__link--lots">Мои лоты</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-menu__icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="header-menu"></div>
-        </div>
-      </div>
-    </header>
-    <!-- /.header -->
+	<div class="container">
+		<div class="header__row">
+			<div class="header__column">
+				<a class="header-logo">
+					<img src="img/logo.svg" alt="Логотип Luxtrader" />
+				</a>
+			</div>
+			<div class="header__column">
+				<nav class="header__navigation header-navigation">
+					<ul class="header-navigation-menu">
+						<li><a href="#" class="header-navigation-menu__link">Главная</a></li>
+						<li><a href="#" class="header-navigation-menu__link">Аукцион</a></li>
+						<li><a href="#" class="header-navigation-menu__link">О проекте</a></li>
+						<li><a href="#" class="header-navigation-menu__link">Партнерам</a></li>
+						<li><a href="#" class="header-navigation-menu__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__column">
+				<ul class="header__lang-select lang-select">
+					<li><a href="#" class="lang-select__link">En</a></li>
+					<li><a href="#" class="lang-select__link">Ru</a></li>
+				</ul>
+			</div>
+			<div class="header__column">
+				<a href="#" class="header__search search">Поиск</a>
+			</div>
+			<div class="header__column">
+				<nav class="header__user-navigation user-navigation">
+					<ul class="user-navigation__list">
+						<li>
+							<a href="#" class="user-navigation__button"></a>
+							<ul class="user-navigation__sublist">
+								<li><a href="#" class="user-navigation__link user-navigation__link--region">Выбор региона</a></li>
+								<li><a href="#" class="user-navigation__link user-navigation__link--private">Личный кабинет</a></li>
+								<li><a href="#" class="user-navigation__link user-navigation__link--bets">Мои ставки</a></li>
+								<li><a href="#" class="user-navigation__link user-navigation__link--lots">Мои лоты</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="header-menu"></div>
+		</div>
+	</div>
+</header>
+<!-- /.header -->
 
 
     <section class="promo">
@@ -445,8 +445,8 @@
                   электронной почты</p>
                 <form action="#" class="subscription__form form-subscription">
                   <p>
-                    <input class="input input--email" autocomplete="off" type="email" name="email"
-                      data-value="Ваш e-mail" placeholder="Ваш e-mail" />
+                    <input class="input input--email req" autocomplete="off" type="email" name="email"
+                      data-value="Ваш e-mail" />
                     <button type="submit" class="form-subscription__btn btn-form">Ок</button>
                   </p>
                 </form>
@@ -458,17 +458,45 @@
     </section>
     <!-- /.interesting -->
     <footer class="footer">
-      <div class='container'>
-        <div class="footer-body">
-
+  <div class='container'>
+    <div class="footer__row">
+      <div class="footer__column">
+        <div class="footer-logo">
+          <img src="img/logo.svg" alt="Логотип аукциона Люкстрейдер" />
+        </div>
+        <p class="footer__copyright copyright">Все права защищены © 2014</p>
+      </div>
+      <div class="footer__column">
+        <nav class="footer__navigation footer-navigation">
+          <ul class="footer-navigation-menu">
+            <li><a href="#" class="footer-navigation-menu__link">Главная</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Аукцион</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">О проекте</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Партнерам</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Контакты</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Новости</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">FAQ</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Реклама</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Соглашение</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Регистрация</a></li>
+            <li><a href="#" class="footer-navigation-menu__link">Услуги</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__column">
+        <div class="footer__contacts">
+          <a class="telephone" href="tel:+7495222222"><span>+7</span> (495) 22-22-22</a>
+          <a href="#" class="feedback"><span>Обратная связь</span></a>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
 
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
 
